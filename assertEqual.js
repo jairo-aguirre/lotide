@@ -1,8 +1,11 @@
+// Using template strings
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log("Assertion ✅: " + actual + " === " + expected);
+    // console.log("Assertion ✅: " + actual + " === " + expected);
+    console.log(`Assertion ✅: ${actual} === ${expected}`);
   } else {
-    console.log("Assertion ❌: " + actual + " !=== " + expected);
+    // console.log("Assertion ❌: " + actual + " !=== " + expected);
+    console.log(`Assertion ❌: ${actual} !=== ${expected}`);
   }
 };
 
