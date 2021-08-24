@@ -1,10 +1,7 @@
 const assertArraysEqual = require('chai').assert;
 
 describe('#assertArraysEqual', () => {
-  it('', () => {
-    assertArraysEqual.strictEqual([1, 2, 3].length, [1, 2, 3].length);
+  it('should pass when both arrays are equal', () => {
+    assertArraysEqual.deepEqual([1, 2, 3], [1, 2, 3]);
   });
-  // it('', () => {
-  //   assertArraysEqual.strictEqual(["1", "2", "3"], ["1", "2", 3]);
-  // });
 });
