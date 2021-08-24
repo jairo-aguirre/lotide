@@ -1,7 +1,10 @@
-const assertEqual = require('../assertEqual');
+const assertEqual = require('chai').assert;
 
-// Test code
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual("Jairo", "Jairo");
-assertEqual(1, 1);
-assertEqual(1, 2);
+describe('#assertEqual', () => {
+  it('should passed/failed depending on the elements comparison (===)', () => {
+    assertEqual.strictEqual("Lighthouse Labs", "Bootcamp");
+  });
+  it('should passed/failed depending on the elements comparison (===)', () => {
+    assertEqual.strictEqual("Jairo", "Jairo");
+  });
+});
